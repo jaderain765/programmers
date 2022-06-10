@@ -11,6 +11,5 @@ class Solution {
             }
             System.out.println();
         }
-        sc.close();
     }
 }
