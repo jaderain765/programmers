@@ -1,4 +1,4 @@
-package programmers.lv1.로또의_최고_순위와_최저_순위;
+
 
 import java.util.Arrays;
 
