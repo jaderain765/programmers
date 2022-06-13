@@ -1,4 +1,4 @@
-package programmers.lv1.신규_아이디_추천;
+package lv1.신규_아이디_추천;
 
 public class Main {
     public static void main(String[] args) {

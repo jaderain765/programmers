@@ -1,4 +1,4 @@
-package programmers.lv1.키패드_누르기;
+package lv1.키패드_누르기;
 
 class 키패드_누르기{
     public static void main(String[] args) {

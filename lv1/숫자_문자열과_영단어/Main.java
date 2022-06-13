@@ -1,4 +1,4 @@
-package programmers.lv1.숫자_문자열과_영단어;
+package lv1.숫자_문자열과_영단어;
 
 class Main {
     public static void main(String[] args) {

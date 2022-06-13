@@ -1,4 +1,4 @@
-package programmers.lv1.신고_결과_받기;
+package lv1.신고_결과_받기;
 
 import java.util.Arrays;
 

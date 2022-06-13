@@ -1,4 +1,4 @@
-package programmers.lv1.문자열_내_마음대로_정렬하기;
+package lv1.문자열_내_마음대로_정렬하기;
 
 import java.util.Arrays;
 

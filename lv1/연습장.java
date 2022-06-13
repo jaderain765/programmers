@@ -1,4 +1,4 @@
-package programmers.lv1;
+package lv1;
 
 public class 연습장 {
     public static void main(String[] args) {
