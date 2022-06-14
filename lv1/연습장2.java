@@ -1,17 +1,17 @@
 package lv1;
 
-public class 연습장2 {
-    public static void main(String[] args) {
-        // Solution sol = new Solution();
-        // int str = sol.solution("1D2S#10S");
-        // System.out.println(str);
+// public class 연습장2 {
+//     public static void main(String[] args) {
+//         // Solution sol = new Solution();
+//         // int str = sol.solution("1D2S#10S");
+//         // System.out.println(str);
 
-        int n = 78;
+//         int n = 78;
 
-        System.out.println(String.format("%s", "1","2","3"));
+//         System.out.println(String.format("%s", "1","2","3"));
 
-    }
-}
+//     }
+// }
 // class Solution {
 //     public int solution(String dartResult) {
 //         int answer = 0, count_num = 0;
