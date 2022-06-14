@@ -1,53 +1,40 @@
 package lv1;
 
+import java.util.*;
+
 public class 연습장 {
     public static void main(String[] args) {
         Solution sol = new Solution();
-        int str = sol.solution("1D2S#10S");
+        int[] str = sol.solution(new int[]{1, 5, 2, 6, 3, 7, 4}, new int[][]{{2, 5, 3}});
         System.out.println(str);
     }
 }
+
+
 class Solution {
-    public int solution(String dartResult) {
-        int answer = 0, count_num = 0;
-        int[] score = new int[3];
+    public int[] solution(int[] array, int[][] commands) {
+        int[] answer = {};
         
-        //
-        for(int i = 0; i < dartResult.length(); i++){
-            int n = 0;
-            //숫자가 10일때
-            if(dartResult.charAt(i)=='1' && dartResult.charAt(i+1)=='0'){
-                n = 10;
-                i+=2;
-            }else if(dartResult.charAt(i)>='0' && dartResult.charAt(i)<='9'){
-                n = dartResult.charAt(i)-48;
-                i++;
-            }
-            // System.out.println(n);
-            // S? D? T?
-            if(dartResult.charAt(i)=='D') n*=n;
-            else if(dartResult.charAt(i)=='T') n= n*n*n;
-            score[count_num] = n;
-            count_num++;
-            if(i == dartResult.length() || i == dartResult.length()-1) break;
-            // *?
-            if(dartResult.charAt(i+1)=='*'){
-                score[count_num-1] *= 2;
-                if(count_num-2 >= 0){
-                    score[count_num - 2] *= 2;
-                }
-                i++;
-            }else if(dartResult.charAt(i+1)=='#' && count_num!=0){
-                score[count_num-1] *= -1;
-                i++;
-            }
-        }
-        for(int i : score){
-            System.out.println(i);
-            answer += i;
-        }
-        
+        System.out.println(K_number(array, commands[0]));
         
         return answer;
+    }
+    
+    static int K_number(int[] array1, int[] array2){
+        
+        if(array2[0] > array2[1]){
+            int tem = array2[0];
+            array2[0] = array2[1];
+            array2[1] = tem;
+        }
+        
+        int[] arr = new int[array2[1]-array2[0]+1];
+        
+        for(int i = array2[0]-1; i < array2[1]; i++){
+            arr[i - (array2[0]-1)] = array1[i];
+        }
+        Arrays.sort(arr);
+        
+        return arr[array2[2]-1];
     }
 }
