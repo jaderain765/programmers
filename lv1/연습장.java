@@ -4,9 +4,22 @@ import java.util.*;
 
 public class 연습장 {
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        int[] str = sol.solution(new int[]{1, 5, 2, 6, 3, 7, 4}, new int[][]{{2, 5, 3}});
-        System.out.println(str);
+        // Solution sol = new Solution();
+        // int[] str = sol.solution(new int[]{1, 5, 2, 6, 3, 7, 4}, new int[][]{{2, 5, 3}});
+        // System.out.println(str);
+
+        String[] str = new String[]{"아 에 이 오 우","가 나 다 라 마","이 히 리", "     "};
+        String[][] str2 = new String[str.length][];
+        
+        for(int i = 0; i < str.length; i++){
+            str2[i] = str[i].split(" ");
+        }
+        for(int i = 0; i < str2.length; i++){
+            System.out.println(Arrays.toString(str2[i]));
+        }
+ 
+
+
     }
 }
 
