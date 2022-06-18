@@ -1,3 +1,5 @@
+package lv1.키패드_누르기;
+
 class Solution {
     public String solution(int[] numbers, String hand) {
         String answer = "";
@@ -56,7 +58,7 @@ class Solution {
         return answer;
     }
 }
-D
+
 class Point{
    int x, y;
 
